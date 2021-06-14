@@ -16,8 +16,8 @@ class Domain:
     def __init__(self, _domain, _label):
         self.domain = _domain
         self.label = _label
-        self.domainNameLength, self.domainNumberCount, self.letterEntropy = processDomain(self.domain)
-
+        self.domainNameLength, self.domainNumberCount,
+        self.letterEntropy = processDomain(self.domain)
     def returnData(self):
         return [self.domainNameLength, self.domainNumberCount, self.letterEntropy]
 
